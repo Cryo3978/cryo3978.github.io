@@ -26,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hello, I'm Aiden Chen. B.E. '24, <a href='https://en.tju.edu.cn/'>Tianjin University</a>; M.S. '26, <a href='https://www.usc.edu/'>USC</a>. PhD Candidate in Computer Science at WPI supervised by Prof. Xiaoyan Sun starting from Fall 2026.
+Hello, I'm Aiden Chen. B.E. '24, <a href='https://en.tju.edu.cn/'>Tianjin University</a>; M.S. '26, <a href='https://www.usc.edu/'>USC</a>. PhD Candidate in Computer Science at <a href='https://www.wpi.edu/'>WPI</a> supervised by Prof. Xiaoyan Sun starting from Fall 2026.
 
 I'm extremyly interested in history (in China, Japan and Europe), economics and of course AI applications. My new channel for AI applications: <a href='https://space.bilibili.com/3546784802540011?spm_id_from=333.337.0.0'>Bilibili</a> (I'm still thinking about the content to post.)
 
