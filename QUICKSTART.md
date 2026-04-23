@@ -44,9 +44,9 @@
 2. Update these fields:
    ```yaml
    title: My Website
-   first_name: Your
-   last_name: Name
-   url: https://your-username.github.io # or your custom domain
+   first_name: Aiden
+   last_name: Chen
+   url: https://cryo3978.github.io # or your custom domain
    baseurl: # Leave this empty (do NOT delete it)
    ```
 3. Click **Commit changes** (at the bottom of the page)
