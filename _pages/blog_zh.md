@@ -7,7 +7,7 @@ nav_order: 1
 locale: zh
 translation_key: blog-index
 blog_name: 博客
-blog_description: Aiden 的学术与个人记录。
+blog_description: Aiden 的学术思考与生活记录。
 pagination:
   enabled: true
   collection: posts

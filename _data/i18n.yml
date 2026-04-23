@@ -29,9 +29,9 @@ zh:
   news_path: /zh/news/
   latest_posts: 最新博文
   latest_posts_path: /zh/blog/
-  selected_publications: 精选论文
+  selected_publications: 代表性论文
   selected_publications_path: /zh/publications/
-  min_read: 分钟阅读
+  min_read: 分钟读完
   no_news: 暂无新闻。
   no_posts: 暂无博文。
   bib_search_placeholder: 输入关键词筛选
@@ -40,5 +40,5 @@ zh:
   lang_current: 中
   lang_target: EN
   project_categories:
-    work: 项目
-    fun: 兴趣
+    work: 研究与工具
+    fun: 兴趣尝试

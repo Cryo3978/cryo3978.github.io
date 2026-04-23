@@ -7,4 +7,4 @@ locale: zh
 translation_key: announcement-usc-ms
 ---
 
-我顺利拿到了 M.S. 学位，并从 USC 毕业了！
+我顺利获得了 M.S. 学位，并从 USC 毕业了！

@@ -2,7 +2,7 @@
 layout: page
 permalink: /zh/publications/
 title: 论文
-description: Shuheng Chen 参与的论文与发表成果。
+description: Shuheng Chen 参与的论文与学术成果。
 nav: true
 nav_order: 2
 locale: zh
