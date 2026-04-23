@@ -50,6 +50,12 @@
     {% assign is_blog_post = true %}
   {% endunless %}
 {% endif %}
+{% assign current_locale = page.locale | default: site.lang | default: 'en' %}
+{% if current_locale == 'zh' %}
+  {% assign og_locale = 'zh_CN' %}
+{% else %}
+  {% assign og_locale = 'en_US' %}
+{% endif %}
 
 {% if site.serve_og_meta %}
   <!-- OpenGraph -->
@@ -61,7 +67,7 @@
   {% if page.og_image or site.og_image %}
     <meta property="og:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}">
   {% endif %}
-  <meta property="og:locale" content="{{ site.lang }}">
+  <meta property="og:locale" content="{{ og_locale }}">
 
   <!-- Twitter card -->
   <meta name="twitter:card" content="summary">

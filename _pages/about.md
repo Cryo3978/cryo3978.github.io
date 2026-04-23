@@ -3,6 +3,8 @@ layout: about
 title: ABOUT
 permalink: /
 subtitle: <a href='https://www.wpi.edu/'>WPI</a>. <a href='mailto:schen11@wpi.edu'>schen11@wpi.edu</a>.
+locale: en
+translation_key: about-home
 
 profile:
   align: right

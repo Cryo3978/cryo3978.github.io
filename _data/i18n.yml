@@ -1,0 +1,44 @@
+en:
+  date_format: "%b %d, %Y"
+  search: Search
+  change_theme: Change theme
+  switch_language: Switch language
+  news: news
+  news_path: /news/
+  latest_posts: latest posts
+  latest_posts_path: /blog/
+  selected_publications: selected publications
+  selected_publications_path: /publications/
+  min_read: min read
+  no_news: No news so far...
+  no_posts: No posts so far...
+  bib_search_placeholder: Type to filter
+  code_repository: Code Repository
+  github_stars: GitHub Stars
+  lang_current: EN
+  lang_target: 中
+  project_categories:
+    work: Work
+    fun: Fun
+zh:
+  date_format: "%Y-%m-%d"
+  search: 搜索
+  change_theme: 切换主题
+  switch_language: 切换语言
+  news: 新闻
+  news_path: /zh/news/
+  latest_posts: 最新博文
+  latest_posts_path: /zh/blog/
+  selected_publications: 精选论文
+  selected_publications_path: /zh/publications/
+  min_read: 分钟阅读
+  no_news: 暂无新闻。
+  no_posts: 暂无博文。
+  bib_search_placeholder: 输入关键词筛选
+  code_repository: 代码仓库
+  github_stars: GitHub 星标
+  lang_current: 中
+  lang_target: EN
+  project_categories:
+    work: 项目
+    fun: 兴趣

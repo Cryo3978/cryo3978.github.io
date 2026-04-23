@@ -1,4 +1,13 @@
 {% if site.bib_search %}
+  {% assign current_locale = page.locale | default: site.lang | default: 'en' %}
+  {% assign locale_strings = site.data.i18n[current_locale] %}
   <script src="{{ '/assets/js/bibsearch.js' | relative_url | bust_file_cache }}" type="module"></script>
-  <input type="text" id="bibsearch" spellcheck="false" autocomplete="off" class="search bibsearch-form-input" placeholder="Type to filter">
+  <input
+    type="text"
+    id="bibsearch"
+    spellcheck="false"
+    autocomplete="off"
+    class="search bibsearch-form-input"
+    placeholder="{{ locale_strings.bib_search_placeholder }}"
+  >
 {% endif %}

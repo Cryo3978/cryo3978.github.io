@@ -3,9 +3,12 @@ layout: page
 title: multi-to-video
 description: A short AI video experiment combining images and video clips.
 img: assets/img/bilibili.jpg
+permalink: /projects/multi-to-video/
 importance: 1
 category: work
 related_publications: false
+locale: en
+translation_key: project-multi-to-video
 ---
 
 This project is a compact video-generation experiment that combines source

@@ -1,4 +1,7 @@
 <div class="news">
+  {% assign current_locale = page.locale | default: site.lang | default: 'en' %}
+  {% assign locale_strings = site.data.i18n[current_locale] %}
+  {% assign date_format = locale_strings.date_format | default: '%b %d, %Y' %}
   {% if page.latest_posts != blank %}
     {% assign latest_posts_size = site.posts | size %}
     <div
@@ -16,7 +19,7 @@
         {% endif %}
         {% for item in latest_posts limit: latest_posts_limit %}
           <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
+            <th scope="row" style="width: 20%">{{ item.date | date: date_format }}</th>
             <td>
               {% if item.redirect == blank %}
                 <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
@@ -43,6 +46,6 @@
       </table>
     </div>
   {% else %}
-    <p>No posts so far...</p>
+    <p>{{ locale_strings.no_posts }}</p>
   {% endif %}
 </div>

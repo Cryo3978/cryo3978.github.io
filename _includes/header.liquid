@@ -1,9 +1,44 @@
+{% assign current_locale = page.locale | default: site.lang | default: 'en' %}
+{% assign locale_strings = site.data.i18n[current_locale] %}
+{% if current_locale == 'zh' %}
+  {% assign target_locale = 'en' %}
+{% else %}
+  {% assign target_locale = 'zh' %}
+{% endif %}
+{% assign current_home_url = '/' %}
+{% assign target_home_url = '/' %}
+{% assign about_title = 'About' %}
+{% assign translatable_docs = site.pages | concat: site.projects | concat: site.news %}
+{% for doc in site.pages %}
+  {% assign doc_locale = doc.locale | default: 'en' %}
+  {% if doc.translation_key == 'about-home' and doc_locale == current_locale %}
+    {% assign current_home_url = doc.url %}
+    {% assign about_title = doc.title %}
+  {% endif %}
+  {% if doc.translation_key == 'about-home' and doc_locale == target_locale %}
+    {% assign target_home_url = doc.url %}
+  {% endif %}
+{% endfor %}
+{% assign switch_url = '' %}
+{% if page.translation_key %}
+  {% for doc in translatable_docs %}
+    {% assign doc_locale = doc.locale | default: 'en' %}
+    {% if doc.translation_key == page.translation_key and doc_locale == target_locale %}
+      {% assign switch_url = doc.url %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% if switch_url == blank %}
+  {% assign switch_url = target_home_url %}
+{% endif %}
+
 <header>
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
+      {% if page.url != current_home_url %}
+        <a class="navbar-brand title font-weight-lighter" href="{{ current_home_url | relative_url }}">
           {% if site.title == 'blank' %}
             {% if site.first_name %}
               <span class="font-weight-bold">
@@ -42,15 +77,11 @@
 
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
-          {% for page in site.pages %}
-            {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
-          {% endfor %}
-
           <!-- About -->
-          <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/' | relative_url }}">
+          <li class="nav-item {% if page.url == current_home_url %}active{% endif %}">
+            <a class="nav-link" href="{{ current_home_url | relative_url }}">
               {{- about_title }}
-              {% if page.permalink == '/' %}
+              {% if page.url == current_home_url %}
                 <span class="sr-only">(current)</span>
               {% endif %}
             </a>
@@ -59,7 +90,8 @@
           <!-- Other pages -->
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
-            {% if p.nav and p.autogen == null %}
+            {% assign p_locale = p.locale | default: 'en' %}
+            {% if p.nav and p.autogen == null and p_locale == current_locale %}
               {% if p.dropdown %}
                 {% assign has_active_child = false %}
                 {% for child in p.children %}
@@ -120,15 +152,28 @@
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">
-              <button id="search-toggle" title="Search" onclick="openSearchModal()">
+              <button id="search-toggle" title="{{ locale_strings.search }}" onclick="openSearchModal()">
                 <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span>
               </button>
             </li>
           {% endif %}
+          <li class="nav-item lang-toggle-item" title="{{ locale_strings.switch_language }}">
+            <div class="lang-toggle">
+              {% if current_locale == 'zh' %}
+                <a class="lang-toggle-link" href="{{ switch_url | relative_url }}">EN</a>
+                <span class="lang-toggle-separator">/</span>
+                <span class="lang-toggle-current">中</span>
+              {% else %}
+                <span class="lang-toggle-current">EN</span>
+                <span class="lang-toggle-separator">/</span>
+                <a class="lang-toggle-link" href="{{ switch_url | relative_url }}">中</a>
+              {% endif %}
+            </div>
+          </li>
           {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">
-              <button id="light-toggle" title="Change theme">
+              <button id="light-toggle" title="{{ locale_strings.change_theme }}">
                 <i class="fa-half-sun-moon" id="light-toggle-system"></i>
                 <i class="fa-solid fa-moon" id="light-toggle-dark"></i>
                 <i class="fa-solid fa-sun" id="light-toggle-light"></i>

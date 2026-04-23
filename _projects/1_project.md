@@ -3,9 +3,12 @@ layout: page
 title: Youtube-Crawler
 description: A lightweight tool for collecting and downloading YouTube videos in batches.
 img: assets/img/youtube.png
+permalink: /projects/youtube-crawler/
 importance: 1
 category: work
 related_publications: false
+locale: en
+translation_key: project-youtube-crawler
 ---
 
 This project is a small Python utility for collecting metadata and downloading

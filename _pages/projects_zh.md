@@ -1,17 +1,17 @@
 ---
 layout: page
-title: PROJECTS
-permalink: /projects/
-description: A QUICKLY growing collection of my projects/useful tools.
+title: 项目
+permalink: /zh/projects/
+description: 持续更新中的项目与实用工具集合。
 nav: true
 nav_order: 3
-locale: en
+locale: zh
 translation_key: projects-index
 display_categories: [work, fun]
 horizontal: false
 ---
 
-<!-- pages/projects.md -->
+<!-- pages/projects_zh.md -->
 <div class="projects">
 {% assign current_locale = page.locale | default: site.lang | default: 'en' %}
 {% assign locale_strings = site.data.i18n[current_locale] %}
