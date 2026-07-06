@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-06-03'
+  last_updated: '2026-07-06'
 papers:
   7jKYmkMAAAAJ:0EnyYjriUFMC:
-    citations: 4
+    citations: 5
     title: Development and Validation of a CatBoost-Based Model for Predicting Significant Creatinine Elevation in ICU Patients Receiving Vancomycin Therapy
     year: '2025'
   7jKYmkMAAAAJ:M3ejUd6NZC8C:
-    citations: 0
+    citations: 1
     title: 'MED-COPILOT: A Medical Assistant Powered by GraphRAG and Similar Patient Case Retrieval'
     year: '2026'
   7jKYmkMAAAAJ:WF5omc3nYNoC:
