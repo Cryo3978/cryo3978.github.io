@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-06'
+  last_updated: '2026-07-17'
 papers:
   7jKYmkMAAAAJ:0EnyYjriUFMC:
     citations: 5
@@ -17,6 +17,10 @@ papers:
     citations: 4
     title: Predicting ICU Readmission in Acute Pancreatitis Patients Using a Machine Learning-Based Model with Enhanced Clinical Interpretability
     year: '2025'
+  7jKYmkMAAAAJ:aqlVkmm33-oC:
+    citations: 2
+    title: Retrospective machine learning approach for forecasting in-hospital death in ICU patients after cardiac arrest
+    year: '2026'
   7jKYmkMAAAAJ:d1gkVwhDpl0C:
     citations: 9
     title: Machine Learning-Based Prediction of ICU Mortality in Sepsis-Associated Acute Kidney Injury Patients Using MIMIC-IV Database with Validation from eICU Database
