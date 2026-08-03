@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-07-27'
+  last_updated: '2026-08-03'
 papers:
   7jKYmkMAAAAJ:0EnyYjriUFMC:
     citations: 5
-    title: Development and Validation of a CatBoost-Based Model for Predicting Significant Creatinine Elevation in ICU Patients Receiving Vancomycin Therapy
+    title: Development and validation of a CatBoost-based model for predicting significant creatinine elevation in ICU patients receiving vancomycin therapy
     year: '2025'
   7jKYmkMAAAAJ:M3ejUd6NZC8C:
     citations: 1
@@ -14,13 +14,13 @@ papers:
     title: 'Interpretable Machine Learning Model for Early Prediction of 30-Day Mortality in ICU Patients With Coexisting Hypertension and Atrial Fibrillation: A Retrospective Cohort Study'
     year: '2025'
   7jKYmkMAAAAJ:Y0pCki6q_DkC:
-    citations: 4
+    citations: 5
     title: Predicting ICU Readmission in Acute Pancreatitis Patients Using a Machine Learning-Based Model with Enhanced Clinical Interpretability
     year: '2025'
   7jKYmkMAAAAJ:aqlVkmm33-oC:
     citations: 2
-    title: Retrospective machine learning approach for forecasting in-hospital death in icu patients after cardiac arrest
-    year: '2025'
+    title: Retrospective machine learning approach for forecasting in-hospital death in ICU patients after cardiac arrest
+    year: '2026'
   7jKYmkMAAAAJ:d1gkVwhDpl0C:
     citations: 10
     title: Machine Learning-Based Prediction of ICU Mortality in Sepsis-Associated Acute Kidney Injury Patients Using MIMIC-IV Database with Validation from eICU Database
@@ -30,6 +30,6 @@ papers:
     title: Machine learning-based prediction of mortality in geriatric traumatic brain injury patients
     year: '2026'
   7jKYmkMAAAAJ:u5HHmVD_uO8C:
-    citations: 4
+    citations: 5
     title: 'Machine Learning-Based Prediction of ICU Readmissions in Intracerebral Hemorrhage Patients: Insights from the MIMIC Databases'
     year: '2025'
