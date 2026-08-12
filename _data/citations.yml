@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-05'
+  last_updated: '2026-08-12'
 papers:
   7jKYmkMAAAAJ:0EnyYjriUFMC:
     citations: 5
@@ -10,7 +10,7 @@ papers:
     title: 'MED-COPILOT: A Medical Assistant Powered by GraphRAG and Similar Patient Case Retrieval'
     year: '2026'
   7jKYmkMAAAAJ:WF5omc3nYNoC:
-    citations: 7
+    citations: 8
     title: 'Interpretable Machine Learning Model for Early Prediction of 30-Day Mortality in ICU Patients With Coexisting Hypertension and Atrial Fibrillation: A Retrospective Cohort Study'
     year: '2025'
   7jKYmkMAAAAJ:Y0pCki6q_DkC:
